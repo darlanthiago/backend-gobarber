@@ -8,5 +8,6 @@ const routes = Router();
 routes.use('/appointments', appointmentsRouter);
 routes.use('/users', usersRouter);
 routes.use('/sessions', sessionsRouter);
+routes.get('/', (req, res) => res.json({ message: 'GoBarber Backend' }));
 
 export default routes;
